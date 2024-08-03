@@ -60,21 +60,6 @@ Luego ejecute el sguiente comando:
    $  java -jar .\identity-service\target\identity-service-0.0.1.jar 
    ```
 
-## Testing
-
-To run the chat model unit tests you need execute the command:
-
-$ mvn test
-
-To run the chat model fusion integration tests you need:
-
-- Update the integration-test profile into the application.yml configuration file, it is located in folder 'chat-model/src/test/resources/'
-
-- run the next command:
-
-$ mvn test -P integration-test
-
-
 ## Project Browser Url
 The project browser is available on:
 
@@ -102,7 +87,6 @@ Para la creacion de usuario nosotros hacemos una peticion al siguiente path:
 http://localhost:9595/example/users
 ```
 
-The request will make use of the __userId__ parameter required and obtained from the social-identity service, also a request body that will be sent in json content type as follows:
 La peticion hace uso de un request body que se enviara en json content tipo como se muestra a continuacion.
 
 ~~~~{.json}
