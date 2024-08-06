@@ -19,30 +19,15 @@ Este modulo es responsable de ejecutar la logica del negocio de cada requrimient
 
 ## Project Dependencies
 
-##### 1.  Java SDK 8 or later
+##### 1.  Java SDK 11 or later
 For more details please visit [Download Java](http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html).
-```shell
-$ java -version
-java version "1.8.0_131"
-Java(TM) SE Runtime Environment (build 1.8.0_131-b11)
-Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
-```
 
 ##### 2.  Maven 3.0 or later
 For more details please visit [Download Maven](http://maven.apache.org/download.cgi).
-```shell
-$ mvn --version
-Apache Maven 3.5.0 (...)
-Maven home: ...
-Java version: 1.8.0_131, vendor: Oracle Corporation
-Java home: ...
-Default locale: ...
-OS name: ...
-```
 
 ## Configurations
 
-##### bootstrap.yml
+##### application.yml
 La localizacion de la configuracion esta en:  
 `identity\identity-service\src\main\resources\application.yml`
 
