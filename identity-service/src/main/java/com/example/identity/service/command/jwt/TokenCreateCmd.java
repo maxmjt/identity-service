@@ -17,7 +17,7 @@ import java.util.Map;
 @SynchronousExecution
 public class TokenCreateCmd implements BussinessLogicCommad {
 
-    private static final String SECRET_KEY = "mySecretKey";
+    private static final String SECRET_KEY = "mySecretKeyByIdentityService";
     private static final long EXPIRATION_TIME = 86400000;
 
     @Setter

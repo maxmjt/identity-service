@@ -58,6 +58,7 @@ public class UserCreateCmd implements BussinessLogicCommad {
         UserEntity instance = new UserEntity();
         instance.setEmail(input.getEmail());
         instance.setName(input.getName());
+        instance.setIsactive(Boolean.FALSE);
         instance.setToken(generateToken(input.getEmail()));
         instance.setPassword(input.getPassword());
 

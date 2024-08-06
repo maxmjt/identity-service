@@ -32,6 +32,9 @@ public class UserEntity {
 
     private String token;
 
+    @Column(columnDefinition = "bit default 0")
+    private Boolean isactive;
+
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "created_at", nullable = false)
     private Date createdAt;

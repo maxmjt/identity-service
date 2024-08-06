@@ -24,7 +24,7 @@ public class UserResponseBuilder {
         instance.setModified(user.getUpdatedAt());
         instance.setLast_login(user.getCreatedAt());
         instance.setToken(user.getToken());
-        instance.setIsactive(Boolean.TRUE);
+        instance.setIsactive(user.getIsactive());
 
         return this;
     }

@@ -18,7 +18,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             "/swagger-ui/**",
             "/swagger-ui.html",
             "/h2-console/**",
-            "/example/users",
+            "/identity/v1/public/users",
             "localhost:9595"
     };
 

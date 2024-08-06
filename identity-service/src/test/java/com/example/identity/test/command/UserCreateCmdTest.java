@@ -1,11 +1,14 @@
 package com.example.identity.test.command;
 
+import com.example.identity.persistence.entity.UserEntity;
 import com.example.identity.service.api.input.UserInput;
 import com.example.identity.service.command.user.UserCreateCmd;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 /**
@@ -16,12 +19,11 @@ public class UserCreateCmdTest {
 
     private UserInput userInput;
 
-    @InjectMocks
+    @Mock
     private UserCreateCmd userCreateCmd;
 
     @BeforeEach
     public void setUp() {
-        // Si es necesario, inicializa las dependencias aquí
         userInput = new UserInput();
         userInput.setName("Max");
         userInput.setEmail("max@gmail.com");
@@ -29,7 +31,12 @@ public class UserCreateCmdTest {
     }
 
     @Test
+    @DisplayName("Create user")
     public void testUserCreateCmd() {
-        // TODO:  Implementation is pending
+        userCreateCmd.setInput(userInput);
+        userCreateCmd.execute();
+        UserEntity userResponse = userCreateCmd.getUserEntity();
+
+        Assertions.assertNotNull(userResponse, "Response should not be null");
     }
 }

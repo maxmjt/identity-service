@@ -84,7 +84,7 @@ Para la creacion de un usuario, usted puede user swagger UI, posteriormente deta
 Para la creacion de usuario nosotros hacemos una peticion al siguiente path:
 
 ```
-http://localhost:9595/example/users
+http://localhost:9595/identity/v1/public/users
 ```
 
 La peticion hace uso de un request body que se enviara en json content tipo como se muestra a continuacion.

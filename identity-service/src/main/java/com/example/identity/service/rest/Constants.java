@@ -16,7 +16,7 @@ public final class Constants {
 
     public static class BasePath {
 
-        public static final String USERS = "/example";
+        public static final String USERS = "/identity/v1/public";
 
     }
 
